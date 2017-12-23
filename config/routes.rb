@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     get 'login', to: 'devise/session#new'
+    get 'signup', to: 'devise/registration#new'
   end
 end

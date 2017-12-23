@@ -1,16 +1,13 @@
 nav.navbar.navbar-default.navbar-fixed-top
   .container
-    /! Brand and toggle get grouped for better mobile display
-    .navbar-header
-      button.navbar-toggle.collapsed aria-expanded="false" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      = link_to "Collabfield", root_path, class:'navbar-brand'
-    /! Collect the nav links, forms, and other content for toggling
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      ul.nav.navbar-nav
-      ul.nav.navbar-nav.navbar-right
-    /! /.navbar-collapse
-  /! /.container-fluid
+    .row
+      /! Elements visible all the time
+      .col-sm-7
+        = render 'layouts/navigation/header'
+      /! col-sm-7
+      /! Elements collapses on smaller devices
+      .col-sm-5
+        = render 'layouts/navigation/collapsible_elements'
+      /! col-sm-5
+    /! row
+  /! container

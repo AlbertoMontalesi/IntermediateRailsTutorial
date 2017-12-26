@@ -1,0 +1,10 @@
+#single-post-content.container
+  .row
+    .col-sm-6.col-sm-offset-3
+      .posted-by
+        | Posted by 
+        = @post.user.name
+      h3
+        = @post.title
+      p
+        = @post.content

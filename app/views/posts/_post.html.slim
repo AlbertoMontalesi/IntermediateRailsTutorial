@@ -1,14 +1,1 @@
-div class='col-sm-3 single-post-card' id="#{post_path(post.id)}"
-  .card
-    .card-block
-      h4.post-text
-        = truncate(post.title, :length => 60)
-      .post-content
-        .posted-by
-          | Posted by 
-          = post.user.name
-        h3
-          = post.title
-        p
-          = post.content
-        = link_to "I'm interested", post_path(post.id), class: 'interested'
+= render post_format_partial_path, post: post 

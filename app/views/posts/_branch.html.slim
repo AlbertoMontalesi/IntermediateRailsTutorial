@@ -5,6 +5,8 @@
     //send user to a page to create a new postx  
     = render 'posts/branch/create_new_post', branch: branch
   .row
+    = render  'posts/branch/search_form', branch: branch, search_placeholder: search_placeholder
+  .row
     = render 'posts/branch/categories', branch: branch
   .row
     #feed.col-sm-12

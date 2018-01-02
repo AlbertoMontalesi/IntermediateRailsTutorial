@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   private
 
   def posts_for_branch(branch)
-    ##we retrieve all categories for a specific branch
+    # #we retrieve all categories for a specific branch
     @categories = Category.where(branch: branch)
     @posts = get_posts.paginate(page: params[:page])
   end

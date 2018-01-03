@@ -53,6 +53,7 @@ group :development, :test do
   gem 'poltergeist'
   gem 'database_cleaner'
   gem 'faker'
+  gem 'meta_request'
 end
 
 group :development do
